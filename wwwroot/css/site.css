@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+.pet-wrapper {
+  border: 3px solid rgb(27, 177, 40);
+  border-radius: 10px;
+  /* text-align: left; */
+  padding: 100px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+  margin-top: 50px;
+}
+
+.right {
+  flex-basis: 50%;
+  margin-right: 65px;
+}
+.btns {
+  margin-top: 30px;
+}
+

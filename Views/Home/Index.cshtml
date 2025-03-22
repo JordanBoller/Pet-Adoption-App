@@ -1,0 +1,10 @@
+﻿@model IEnumerable<midterm_project.Models.Pet>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="text-center">Pets For Adoption Website!</h1>
+<div>
+    <a class="btn btn-success mt-3" asp-controller="Pet" asp-action="List">View Pets!</a>
+    <a class="btn btn-primary mt-3 float-end" asp-controller="Pet" asp-action="Add">Add New Pet!</a>
+</div>

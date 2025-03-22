@@ -1,0 +1,30 @@
+@model IEnumerable<midterm_project.Models.Pet>
+    
+
+@{
+    ViewData["Title"] = "Single";
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Pets for Adoption</h1>
+
+    <div class=pet-wrapper>
+        <div class="left">
+            <h3>PetName</h3>
+            <p>PetDescription</p>
+        </div>
+        <div class="right">
+            <div class="pix"> <img src="ImgUrl" /> </div>
+            <div class="btns">
+                <a class="btn btn-sm btn-info mb-3" asp-controller="Pet" asp-action="Detail" asp-route-id="PetId">
+                    Edit Pet!
+                </a>
+                <a class="btn btn-warning" asp-controller="Pet" asp-action="List">Back</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>

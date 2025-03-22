@@ -1,0 +1,29 @@
+@model midterm_project.Models.Pet
+
+<div class="form-group">
+    <div class="row mb-4">
+        <label class="control-label col-md-4" asp-for="PetName"></label>
+        <input class="form-control col-md-8" asp-for="PetName" />
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="PetName"></span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-md-4" asp-for="ImgUrl"></label>
+        <input class="form-control col-md-8" asp-for="ImgUrl" />
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="ImgUrl"></span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-md-4" asp-for="PetDescription"></label>
+        <textarea class="form-control col-md-8" asp-for="PetDescription"></textarea>
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="PetDescription"></span>
+        </div>
+    </div>
+
+
+</div>
